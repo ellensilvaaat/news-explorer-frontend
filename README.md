@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Projeto Finder App (News Explorer)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é o projeto final do curso de Desenvolvimento Web, focado na criação de uma aplicação front-end completa e reativa. A aplicação, chamada "Finder App", permite que os utilizadores pesquisem notícias de todo o mundo em tempo real, utilizando a API de notícias [NewsAPI](https://newsapi.org/).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### **[Clique aqui para ver o projeto em funcionamento](https://SEU-LINK-AQUI.vercel.app)**
 
-### `npm start`
+**(Nota: Substitua o link acima pelo link gerado pelo Vercel ou Netlify após o deploy.)**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades Principais
 
-### `npm test`
+-   **Pesquisa Dinâmica:** Pesquise notícias por qualquer palavra-chave.
+-   **Resultados em Tempo Real:** A aplicação conecta-se à NewsAPI para obter as notícias mais recentes relacionadas com a sua pesquisa.
+-   **Feedback ao Utilizador:** Indicadores visuais de "A carregar..." durante a pesquisa e mensagens claras para "Nenhum resultado encontrado" ou em caso de erro na API.
+-   **Paginação Simples:** Os resultados são apresentados em grupos de 3, com um botão "Mostrar mais" para carregar artigos adicionais, melhorando a performance e a experiência de utilização.
+-   **Design Responsivo:** A interface adapta-se a diferentes tamanhos de ecrã, desde telemóveis a desktops.
+-   **Links Externos:** Cada card de notícia contém um link que direciona o utilizador para a notícia completa no seu site de origem, abrindo numa nova aba.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Utilizadas
 
-### `npm run build`
+-   **React:** A biblioteca principal para a construção da interface de utilizador reativa e baseada em componentes.
+-   **HTML5 & CSS3:** Utilizados para a estrutura semântica e estilização moderna, seguindo a metodologia BEM.
+-   **JavaScript (ES6+):** Lógica da aplicação, incluindo chamadas assíncronas com a Fetch API.
+-   **NewsAPI:** API de terceiros utilizada como fonte de dados para as notícias.
+-   **Git & GitHub:** Controlo de versão e alojamento do código.
+-   **Vercel/Netlify:** Plataforma utilizada para a implantação (deploy) da aplicação.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Estrutura do Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O projeto foi desenvolvido com uma arquitetura de componentes bem definida para garantir a reutilização de código e a manutenibilidade:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+/src
+|-- /components     # Componentes reutilizáveis (Header, Footer, SearchForm, etc.)
+|-- /constants      # Constantes do projeto (ex: configurações da API)
+|-- /fonts          # Ficheiros de fontes locais
+|-- /utils          # Funções utilitárias (ex: lógica da API)
+|-- App.js          # Componente principal que orquestra a aplicação
+|-- index.js        # Ponto de entrada da aplicação
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Como Executar o Projeto Localmente
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  Clone o repositório: `git clone https://github.com/ellensilvaaat/news-explorer-frontend.git`
+2.  Navegue até à pasta do projeto: `cd news-explorer-frontend`
+3.  Instale as dependências: `npm install`
+4.  Inicie o servidor de desenvolvimento: `npm start`
+5.  Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
