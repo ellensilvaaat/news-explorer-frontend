@@ -4,7 +4,7 @@ Este é o projeto final do curso de Desenvolvimento Web, focado na criação de 
 
 ---
 
-### **[Clique aqui para ver o projeto em funcionamento](https://SEU-LINK-AQUI.vercel.app)**
+### **[Clique aqui para ver o projeto em funcionamento](https://news-explorer-frontend-alpha.vercel.app)**
 
 **(Nota: Substitua o link acima pelo link gerado pelo Vercel ou Netlify após o deploy.)**
 
