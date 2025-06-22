@@ -1,0 +1,45 @@
+/* Estilos da Secção de Busca */
+.search {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.search__title {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.search__form {
+  display: flex;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.search__input {
+  flex-grow: 1;
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.search__input:focus {
+  outline: none;
+}
+
+.search__button {
+  border: none;
+  background-color: #2F71E5;
+  color: white;
+  padding: 0 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search__button:hover {
+  background-color: #347EFF;
+}

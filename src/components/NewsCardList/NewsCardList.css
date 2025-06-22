@@ -1,0 +1,30 @@
+/* Estilos da Seção de Resultados */
+.results {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.results__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.results__show-more-button {
+  display: block;
+  margin: 40px auto 0;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1A1B22;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.results__show-more-button:hover {
+  background-color: #E8E8E8;
+}
